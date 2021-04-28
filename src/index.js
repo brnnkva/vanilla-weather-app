@@ -68,7 +68,7 @@ function searchCity(city){
 function handleSearch(event){
     event.preventDefault();
     let city = document.querySelector("#search-city-input").value;
-    searchCity(city.value);
+    searchCity(city);
 }
 
 searchCity("Budapest");

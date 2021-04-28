@@ -10,9 +10,9 @@ ul {
 }
 
 li {
-  list-style: none;
   color: #272e3d;
   font-size: 1;
+  list-style: none;
   line-height: 1.8;
 }
 
@@ -20,16 +20,23 @@ li {
   max-width: 650px;
   margin: 30px auto;
 }
+
 .weather-app {
-  padding: 20px;
   border: 1px solid #d9dce0;
   border-radius: 5px;
   font-family: "Antonio", sans-serif;
+  padding: 20px;
 }
+
+.current-date {
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
 .weather-icon-temp img {
   height: 100px;
-  width: 100px;
   margin-bottom: 10px;
+  width: 100px;
 }
 
 .weather-icon-temp span {
@@ -37,12 +44,8 @@ li {
   line-height: 1;
 }
 .weather-icon-temp small {
-  position: relative;
   font-size: 15px;
-  top: -30px;
   margin-left: 3px;
-}
-.current-date {
-  margin-top: 14px;
-  line-height: 1.5;
+  position: relative;
+  top: -30px;
 }
