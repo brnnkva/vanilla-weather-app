@@ -1,5 +1,5 @@
 h1 {
-  color: #578186;
+  color: #0b3a5a;
   font-size: 40px;
   line-height: 1;
   margin: 15px auto;
@@ -17,6 +17,13 @@ li {
   line-height: 1.8;
 }
 
+li span {
+  color: #9c2510;
+}
+a {
+  text-decoration: none;
+  color: #9c2510;
+}
 .container {
   max-width: 650px;
   margin: 30px auto;
@@ -54,23 +61,24 @@ li {
 }
 
 .btn-primary {
-  background: #578286;
-  border: #578186;
+  background: #0a466e;
+  color: #eff1f3;
+  border: none;
 }
 .btn-primary:hover {
-  background: #d9dce0;
-  color: #578186;
-  transition: all 200ms ease-in-out;
-  border: 1px solid #578186;
+  background: #0f5280;
+  transition: all 300ms ease-in-out;
 }
 
 .findCurrent-button {
-  background: #e2703a;
-  color: #d9dce0;
+  background: #9c2510;
+  border: none;
+  color: #f1f6fc;
 }
 .findCurrent-button:hover {
-  background: #d9dce0;
-  color: #e2703a;
-  border: 1px solid #e2703a;
-  transition: all 200ms ease-in-out;
+  background: #be2c12;
+  transition: all 300ms ease-in-out;
+}
+.signature {
+  font-size: 12px;
 }
