@@ -19,6 +19,7 @@
   <link 
   href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap" 
   rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="src/style.css">
     <title>weather app</title>
 </head>
@@ -75,7 +76,7 @@
     
             <div class="row top-row">
                 <div class="col-6 left-side">
-                    <h1 >
+                    <h1 id="main-city">
                         Kyiv
                     </h1> 
 
@@ -85,7 +86,7 @@
                           alt="Clear"
                           class="float-left">
                         <div class="float-left">
-                            <span>9</span><small>°C | F</small>
+                            <span id="temperature">9</span><small>°C | F</small>
                         </div>
                             
                        
@@ -97,13 +98,13 @@
     
                     <ul>
                         <li>
-                            weather:
+                            weather: <span id = "weather-discription"></span>
                         </li>
                         <li>
-                            wind:
+                            wind: <span id="wind"></span> km/h
                         </li>
                         <li>
-                            humidity:
+                            humidity: <span id = "humidity"></span> %
                         </li>
                     </ul>
     

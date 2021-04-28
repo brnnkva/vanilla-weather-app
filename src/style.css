@@ -29,14 +29,16 @@ li {
 .weather-icon-temp img {
   height: 80px;
   width: 80px;
+  margin-bottom: 10px;
 }
 
 .weather-icon-temp span {
-  font-size: 55px;
+  font-size: 42px;
   line-height: 1;
 }
 .weather-icon-temp small {
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
   top: -30px;
+  margin-left: 3px;
 }
