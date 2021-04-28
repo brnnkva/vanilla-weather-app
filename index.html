@@ -10,6 +10,10 @@
     rel="stylesheet" 
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
     crossorigin="anonymous">
+    <script 
+    src="https://kit.fontawesome.com/3c8beb9935.js" 
+    crossorigin="anonymous">
+  </script>
     <title>weather app</title>
 </head>
 <body>
@@ -38,32 +42,38 @@
                 <div class="col-6 right-side">
                     <div class="card-body">
                         <form>
-    
-                            <input 
-                               type="text" 
-                               class="form-control"
-                               autocomplete="off"
-                               autofocus ="off"
-                               placeholder="enter city"
-                               id = "search-city-input">
-    
-                            <input 
-                                  type="submit" 
-                                 class="btn btn-primary shadow-sm" 
-                                 value="search"
-                                 id = "submit-button">     
-    
-                                <button 
-                                  type="click" 
-                                  class="btn btn-primary findCurrent-button"
-                                  id = "current-location-button">
-                                  <div class="locationMarker">
-                                    <i class="fas fa-map-marker-alt" 
-                                     aria-hidden="true">
-                                    </i>
-                                  </div>
-                               </button>
-    
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <input 
+                                    type="text" 
+                                    class="form-control"
+                                    autocomplete="off"
+                                    autofocus ="off"
+                                    placeholder="enter city"
+                                    id = "search-city-input">
+                                </div>
+                                <div class="col-3">
+                                    <input 
+                                    type="submit" 
+                                   class="btn btn-primary shadow-sm" 
+                                   value="search"
+                                   id = "submit-button">    
+                                </div>
+                                <div class="col-3">
+                                    <button 
+                                    type="click" 
+                                    class="btn btn-primary findCurrent-button"
+                                    id = "current-location-button">
+                                    <div class="locationMarker">
+                                      <i class="fas fa-map-marker-alt" 
+                                       aria-hidden="true">
+                                      </i>
+                                    </div>
+                                 </button>
+                                </div>
+                            </div>
+
                         </form>
                     </div>
     
@@ -85,6 +95,7 @@
     
     
         </div>
+
         <small>
           <a href="https://github.com/brnnkva/vanilla-weather-app" 
           target="_blank">
