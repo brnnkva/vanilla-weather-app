@@ -1,7 +1,8 @@
 h1 {
+  color: #578186;
   font-size: 40px;
   line-height: 1;
-  margin-bottom: 20px;
+  margin: 15px auto;
 }
 
 ul {
@@ -22,8 +23,10 @@ li {
 }
 
 .weather-app {
-  border: 1px solid #d9dce0;
+  border: 1px solid #eff1f3;
   border-radius: 5px;
+  background: #eff1f3;
+  opacity: 0.9;
   font-family: "Antonio", sans-serif;
   padding: 20px;
 }
@@ -48,4 +51,26 @@ li {
   margin-left: 3px;
   position: relative;
   top: -30px;
+}
+
+.btn-primary {
+  background: #578286;
+  border: #578186;
+}
+.btn-primary:hover {
+  background: #d9dce0;
+  color: #578186;
+  transition: all 200ms ease-in-out;
+  border: 1px solid #578186;
+}
+
+.findCurrent-button {
+  background: #e2703a;
+  color: #d9dce0;
+}
+.findCurrent-button:hover {
+  background: #d9dce0;
+  color: #e2703a;
+  border: 1px solid #e2703a;
+  transition: all 200ms ease-in-out;
 }
