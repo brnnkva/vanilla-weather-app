@@ -26,6 +26,10 @@ li {
   border-radius: 5px;
   font-family: "Antonio", sans-serif;
 }
+.weather-icon-temp img {
+  height: 80px;
+  width: 80px;
+}
 
 .weather-icon-temp span {
   font-size: 55px;
