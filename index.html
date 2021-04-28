@@ -28,7 +28,7 @@
 
             <div class="row">
                 <div class="col-6">
-                    <p>
+                    <p class="current-date">
                         wednesday, april 28
                         <br />
                         9:31
@@ -77,18 +77,20 @@
                 <div class="col-6 left-side">
                     <h1 >
                         Kyiv
-                     </h1> 
+                    </h1> 
+
+                    <div class="clearfix weather-icon-temp">
+                        <img 
+                          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" 
+                          alt="Clear"
+                          class="float-left">
+                        <div class="float-left">
+                            <span>9</span><small>°C</small>
+                        </div>
+                            
+                       
+                    </div>
              
-                     <ul>
-                         <li>
-                             <img 
-                             src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" 
-                             alt="Clear">
-                         </li>
-                         <li>
-                             9°C
-                         </li>
-                     </ul>
                 </div>
                 <div class="col-6 right-side">
                    
@@ -109,17 +111,16 @@
             </div>
     
     
-            <small>
-                <a href="https://github.com/brnnkva/vanilla-weather-app" 
-                target="_blank">
-                open-source code</a>  by brnnkva
-              </small>
-        </div>
 
+        </div>
+        <small>
+            <a href="https://github.com/brnnkva/vanilla-weather-app" 
+            target="_blank">
+            open-source code</a>  by brnnkva
+          </small>
     </div>
 
         
-
    <script src="src/index.js"></script>
 </body>
 </html>
