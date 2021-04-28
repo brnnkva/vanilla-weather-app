@@ -13,7 +13,7 @@ li {
   list-style: none;
   color: #272e3d;
   font-size: 1;
-  line-height: 24px;
+  line-height: 1.8;
 }
 
 .container {
@@ -27,8 +27,8 @@ li {
   font-family: "Antonio", sans-serif;
 }
 .weather-icon-temp img {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin-bottom: 10px;
 }
 
@@ -43,5 +43,6 @@ li {
   margin-left: 3px;
 }
 .current-date {
-  margin-top: 15px;
+  margin-top: 14px;
+  line-height: 1.5;
 }

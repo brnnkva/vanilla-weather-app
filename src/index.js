@@ -58,8 +58,20 @@ function showTemp(response) {
 
 }
 
-apiKey = "a2448133104335b630f878b5541b3167";
-let city = "Hangzhou";
-apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function searchCity(city){
+    apiKey = "a2448133104335b630f878b5541b3167";
+    apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(showTemp);
+   axios.get(apiUrl).then(showTemp);
+}
+
+function handleSearch(event){
+    event.preventDefault();
+    let city = document.querySelector("#search-city-input").value;
+    searchCity(city.value);
+}
+
+searchCity("Budapest");
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSearch);
