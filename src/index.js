@@ -47,14 +47,19 @@ function showTemp(response) {
     document.querySelector("#main-city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
 
-  document.querySelector("#weather-discription").innerHTML = response.data.weather[0].description;
-  document.querySelector("#wind").innerHTML = response.data.wind.speed;
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+    document.querySelector("#weather-discription").innerHTML = response.data.weather[0].description;
+    document.querySelector("#wind").innerHTML = response.data.wind.speed;
+    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+    let iconElement = document.querySelector("#main-icon");
+    iconElement.setAttribute(
+        "src", 
+        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("alt", response.data.weather[0].description);
 
 }
 
 apiKey = "a2448133104335b630f878b5541b3167";
-let city = "Kyiv";
+let city = "Hangzhou";
 apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(showTemp);
