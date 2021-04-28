@@ -14,12 +14,86 @@
 </head>
 <body>
     <div class="container">
-
-        <h1>
-            Hey
-        </h1> 
+        <div class="weather-app">
+            <p>
+                wednesday, april 28
+                <br />
+                9:31
+            </p>
+            <div class="row top-row">
+                <div class="col-6 left-side">
+                    <h1>
+                        Kyiv
+                     </h1> 
+             
+                     <ul>
+                         <li>
+                             icon
+                         </li>
+                         <li>
+                             9°C
+                         </li>
+                     </ul>
+                </div>
+                <div class="col-6 right-side">
+                    <div class="card-body">
+                        <form>
+    
+                            <input 
+                               type="text" 
+                               class="form-control"
+                               autocomplete="off"
+                               autofocus ="off"
+                               placeholder="enter city"
+                               id = "search-city-input">
+    
+                            <input 
+                                  type="submit" 
+                                 class="btn btn-primary shadow-sm" 
+                                 value="search"
+                                 id = "submit-button">     
+    
+                                <button 
+                                  type="click" 
+                                  class="btn btn-primary findCurrent-button"
+                                  id = "current-location-button">
+                                  <div class="locationMarker">
+                                    <i class="fas fa-map-marker-alt" 
+                                     aria-hidden="true">
+                                    </i>
+                                  </div>
+                               </button>
+    
+                        </form>
+                    </div>
+    
+                    <ul>
+                        <li>
+                            weather:
+                        </li>
+                        <li>
+                            wind:
+                        </li>
+                        <li>
+                            humidity:
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+    
+    
+    
+        </div>
+        <small>
+          <a href="https://github.com/brnnkva/vanilla-weather-app" 
+          target="_blank">
+          open-source code</a>  by brnnkva
+        </small>
 
     </div>
+
+        
 
    <script src="src/index.js"></script>
 </body>
