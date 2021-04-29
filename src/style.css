@@ -1,5 +1,5 @@
 h1 {
-  color: #0b3a5a;
+  color: #2e5dbb;
   font-size: 40px;
   line-height: 1;
   margin: 15px auto;
@@ -18,11 +18,11 @@ li {
 }
 
 li span {
-  color: #9c2510;
+  color: #2e5dbb;
 }
 a {
   text-decoration: none;
-  color: #9c2510;
+  color: #2e5dbb;
 }
 .container {
   max-width: 650px;
@@ -30,9 +30,9 @@ a {
 }
 
 .weather-app {
-  border: 1px solid #eff1f3;
+  border: 1px solid #d3d3d3;
   border-radius: 5px;
-  background: #eff1f3;
+  background: #d3d3d3;
   opacity: 0.9;
   font-family: "Antonio", sans-serif;
   padding: 20px;
@@ -61,22 +61,22 @@ a {
 }
 
 .btn-primary {
-  background: #0a466e;
+  background: #353942;
   color: #eff1f3;
   border: none;
 }
 .btn-primary:hover {
-  background: #0f5280;
+  background: #545b69;
   transition: all 300ms ease-in-out;
 }
 
 .findCurrent-button {
-  background: #9c2510;
+  background: #224997;
   border: none;
   color: #f1f6fc;
 }
 .findCurrent-button:hover {
-  background: #be2c12;
+  background: #2e5dbb;
   transition: all 300ms ease-in-out;
 }
 .signature {
