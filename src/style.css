@@ -12,18 +12,18 @@ ul {
 
 li {
   color: #272e3d;
-  font-size: 1;
   list-style: none;
   line-height: 1.8;
 }
-
 li span {
   color: #2e5dbb;
 }
+
 a {
   text-decoration: none;
   color: #2e5dbb;
 }
+
 .container {
   max-width: 650px;
   margin: 30px auto;
@@ -58,6 +58,11 @@ a {
   margin-left: 3px;
   position: relative;
   top: -30px;
+}
+
+.weather-icon-temp .active {
+  color: #272e3d;
+  cursor: default;
 }
 
 .btn-primary {

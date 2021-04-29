@@ -47,6 +47,8 @@ function showTemp(response) {
     document.querySelector("#main-city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
 
+    celTemp = response.data.main.temp;
+
     document.querySelector("#weather-discription").innerHTML = response.data.weather[0].description;
     document.querySelector("#wind").innerHTML = response.data.wind.speed;
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -71,7 +73,30 @@ function handleSearch(event){
     searchCity(city);
 }
 
-searchCity("Budapest");
+function showFaTemp(event){
+event.preventDefault();
+let FaTemp = (celTemp * 9) / 5 + 32;
+celLink.classList.remove("active");
+faLink.classList.add("active");
+document.querySelector("#temperature").innerHTML = Math.round(FaTemp);
+}
+
+function showCelTemp(event){
+  event.preventDefault();
+  celLink.classList.add("active");
+  faLink.classList.remove("active");
+  document.querySelector("#temperature").innerHTML = Math.round(celTemp);
+}
+
+let celTemp = null;
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearch);
+
+faLink = document.querySelector("#fa-link");
+faLink.addEventListener("click", showFaTemp);
+
+celLink = document.querySelector("#cel-link");
+celLink.addEventListener("click", showCelTemp);
+
+searchCity("Budapest");
