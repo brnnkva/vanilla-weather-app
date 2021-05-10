@@ -11,9 +11,10 @@ ul {
 }
 
 li {
+  font-size: 18px;
   color: #272e3d;
   list-style: none;
-  line-height: 1.8;
+  line-height: 2.3;
 }
 li span {
   color: #2e5dbb;
@@ -39,6 +40,7 @@ a {
 }
 
 .current-date {
+  font-size: 15px;
   margin-top: 14px;
   line-height: 1.5;
 }
@@ -87,16 +89,18 @@ a {
 
 .weather-forecast {
   margin-top: 80px;
+  padding-bottom: 25px;
   text-align: center;
   color: #272e3d;
 }
 
 .forecast-date {
-  font-size: 20px;
+  font-size: 16px;
+  opacity: 0.7;
 }
 
 .forecast-temp {
-  font-size: 16px;
+  font-size: 15px;
   color: #2e5dbb;
 }
 .forecasr-temp-min {

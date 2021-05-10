@@ -43,6 +43,39 @@ function formatDate (date) {
   let currentDate = document.querySelector(".current-date");
   currentDate.innerHTML = formatDate(now);
 
+function displayForecast(){
+  let forecastElemet = document.querySelector("#weather-forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+  days.forEach(function(day){
+
+
+  
+  forecastHTML =  forecastHTML + 
+  `
+  <div class="col-2">
+      <div class="forecast-date">
+          ${day}
+      </div>
+     <img src="http://openweathermap.org/img/wn/01d@2x.png" 
+     alt="" 
+     width="60"/> 
+     <div class="forecast-temp">
+         <span class="forecast-temp-max">
+          18
+         </span>
+         <span class="forecasr-temp-min">
+          12
+         </span>
+     </div>
+  </div>
+`;
+
+});
+forecastHTML = forecastHTML + `</div>`;
+forecastElemet.innerHTML = forecastHTML;
+}
+
 function showTemp(response) {
     document.querySelector("#main-city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
@@ -100,3 +133,4 @@ celLink = document.querySelector("#cel-link");
 celLink.addEventListener("click", showCelTemp);
 
 searchCity("Budapest");
+displayForecast();
