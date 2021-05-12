@@ -43,14 +43,13 @@ function formatDate (date) {
   let currentDate = document.querySelector(".current-date");
   currentDate.innerHTML = formatDate(now);
 
-function displayForecast(){
+function displayForecast(response){
+  console.log(response.data.daily);
   let forecastElemet = document.querySelector("#weather-forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
   days.forEach(function(day){
 
-
-  
   forecastHTML =  forecastHTML + 
   `
   <div class="col-2">
@@ -76,6 +75,13 @@ forecastHTML = forecastHTML + `</div>`;
 forecastElemet.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates){
+  
+  let apiKey = "a2448133104335b630f878b5541b3167";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function showTemp(response) {
     document.querySelector("#main-city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
@@ -90,7 +96,8 @@ function showTemp(response) {
         "src", 
         `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
-
+ 
+   getForecast(response.data.coord);
 }
 
 function searchCity(city){
@@ -133,4 +140,3 @@ celLink = document.querySelector("#cel-link");
 celLink.addEventListener("click", showCelTemp);
 
 searchCity("Budapest");
-displayForecast();
