@@ -31,9 +31,9 @@ a {
 }
 
 .weather-app {
-  border: 1px solid #d3d3d3;
+  border: 1px solid #e2e1e1;
   border-radius: 5px;
-  background: #d3d3d3;
+  background: #e2e1e1;
   opacity: 0.9;
   font-family: "Antonio", sans-serif;
   padding: 20px;
@@ -88,11 +88,11 @@ a {
 }
 
 .weather-app-forecast {
-  border: 1px solid #d3d3d3;
+  border: 1px solid #e1e1e2;
   border-radius: 5px;
-  background: #d3d3d3;
+  background: #e1e1e2;
   color: #272e3d;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .weather-forecast {
@@ -103,9 +103,14 @@ a {
 }
 
 .forecast-date {
-  color: #2e5dbb;
-  font-size: 16px;
+  color: #272e3d;
+  font-size: 17px;
   opacity: 0.8;
+}
+
+.forecast-weather-details {
+  color: #2e5dbb;
+  font-size: 14px;
 }
 
 .forecast-temp {
