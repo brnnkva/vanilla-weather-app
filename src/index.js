@@ -58,7 +58,7 @@ function displayForecast(response){
       </div>
      <img src="http://openweathermap.org/img/wn/01d@2x.png" 
      alt="" 
-     width="60"/> 
+     width="55"/> 
      <div class="forecast-temp">
          <span class="forecast-temp-max">
           18
