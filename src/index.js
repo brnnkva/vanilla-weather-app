@@ -137,30 +137,8 @@ function handleSearch(event){
     searchCity(city);
 }
 
-function showFaTemp(event){
-event.preventDefault();
-let FaTemp = (celTemp * 9) / 5 + 32;
-celLink.classList.remove("active");
-faLink.classList.add("active");
-document.querySelector("#temperature").innerHTML = Math.round(FaTemp);
-}
-
-function showCelTemp(event){
-  event.preventDefault();
-  celLink.classList.add("active");
-  faLink.classList.remove("active");
-  document.querySelector("#temperature").innerHTML = Math.round(celTemp);
-}
-
-let celTemp = null;
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearch);
-
-faLink = document.querySelector("#fa-link");
-faLink.addEventListener("click", showFaTemp);
-
-celLink = document.querySelector("#cel-link");
-celLink.addEventListener("click", showCelTemp);
 
 searchCity("Budapest");

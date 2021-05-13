@@ -52,14 +52,14 @@ a {
 }
 
 .weather-icon-temp span {
-  font-size: 30px;
+  font-size: 35px;
   line-height: 1;
 }
 .weather-icon-temp small {
   font-size: 15px;
   margin-left: 3px;
   position: relative;
-  top: -30px;
+  top: -25px;
 }
 
 .weather-icon-temp .active {
