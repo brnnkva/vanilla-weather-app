@@ -136,8 +136,21 @@ function handleSearch(event){
     searchCity(city);
 }
 
+function searchCurrentLocation(position){
+  apiKey = "a2448133104335b630f878b5541b3167";
+  apiUrl =`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`
+  axios.get(apiUrl).then(showTemp);
+}
+
+function getCurrentLocation(event){
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchCurrentLocation);
+}
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearch);
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Budapest");
